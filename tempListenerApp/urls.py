@@ -19,7 +19,7 @@ from rest_framework import routers
 from tempListener import views
 
 router = routers.DefaultRouter()
-router.register(r'temperature/v1', views.TemperatureViewSet)
+router.register(r'api/v1/temp_records', views.TemperatureViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
